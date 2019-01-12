@@ -1,0 +1,24 @@
+{
+  "name": "acme-hier",
+  "version": "1.0.0",
+  "description": "Fullstack WeekendProject 01",
+  "main": "showManagementStructure.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha showManagementStructure.spec.js --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slevine111/acme-hier.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slevine111/acme-hier/issues"
+  },
+  "homepage": "https://github.com/slevine111/acme-hier#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0"
+  }
+}

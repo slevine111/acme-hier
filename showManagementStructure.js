@@ -1,16 +1,9 @@
-const users = [
-  { id: 1, name: 'moe' },
-  { id: 2, name: 'larry', managerId: 1 },
-  { id: 3, name: 'curly', managerId: 2 },
-  { id: 4, name: 'shep', managerId: 1 },
-  { id: 5, name: 'groucho', managerId: 4 }
-]
-
 let showManagementStructure = input => {
+  let copyOfInput = [...input]
   let string = ''
   let lengthOfManagerLine
   let stringForElement
-  input.forEach((element, index, arr) => {
+  copyOfInput.forEach((element, index, arr) => {
     if (index === 0) {
       element.numChars = element.name.length
       stringForElement = element.name
@@ -26,4 +19,4 @@ let showManagementStructure = input => {
   return string
 }
 
-showManagementStructure(users)
+module.exports = showManagementStructure
